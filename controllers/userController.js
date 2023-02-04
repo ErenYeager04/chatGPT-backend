@@ -74,7 +74,7 @@ const emailConfirm = async (req, res) => {
     res.status(400).json({error: error.message})
   }
 
-   return res.redirect(`${process.env.FRONTEND}/login`)
+   return res.redirect(`${process.env.FRONTEND}`)
 }
 
 module.exports = { loginUser, signupUser, emailConfirm }
